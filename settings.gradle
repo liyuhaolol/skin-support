@@ -1,0 +1,3 @@
+rootProject.name = "SkinSupport"
+include ':app'
+include ':skin-support'
