@@ -6,7 +6,7 @@
 
     <declare-styleable name="SkinCompatImageView">
         <attr name="android:src" />
-        <attr name="srcCompat" />
+        <!--<attr name="srcCompat" />-->
         <attr name="android:tint" format="color" />
         <attr name="tint" format="color" />
     </declare-styleable>
@@ -27,7 +27,7 @@
         <attr name="android:textColorHint" />
         <attr name="android:textStyle" />
         <attr name="android:typeface" />
-        <attr name="textAllCaps" />
+        <!--<attr name="textAllCaps" />-->
         <attr name="android:shadowColor" />
         <attr name="android:shadowDy" />
         <attr name="android:shadowDx" />

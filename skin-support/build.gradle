@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    compileSdkVersion 31
+    compileSdk 31
 
     defaultConfig {
-        minSdkVersion 14
-        targetSdkVersion 31
+        minSdk 14
+        targetSdk 31
         versionCode 1
         versionName "1.0"
     }
@@ -35,7 +35,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.liyuhaolol'
                 artifactId = 'skin-support'
-                version = '4.0.6'
+                version = '4.0.7'
             }
         }
     }
