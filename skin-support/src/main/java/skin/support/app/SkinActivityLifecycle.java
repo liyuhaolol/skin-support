@@ -6,6 +6,7 @@ import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.View;
 
 import java.lang.ref.WeakReference;
 import java.util.WeakHashMap;
@@ -168,6 +169,12 @@ public class SkinActivityLifecycle implements Application.ActivityLifecycleCallb
                 updateSkinForce();
             } else {
                 mMarkNeedUpdate = true;
+                Activity activity = (Activity) mContext;
+                if (!activity.isFinishing()){
+                    if (activity.getWindow().getDecorView().getVisibility() == View.VISIBLE){
+                        updateSkinIfNeeded();
+                    }
+                }
             }
         }
 
