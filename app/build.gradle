@@ -3,12 +3,13 @@ plugins {
 }
 
 android {
-    compileSdk 31
+    namespace 'spa.lyh.cn.skinsupport'
+    compileSdk 34
 
     defaultConfig {
         applicationId "spa.lyh.cn.skinsupport"
         minSdk 14
-        targetSdk 31
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 
